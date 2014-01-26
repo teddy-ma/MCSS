@@ -16,7 +16,7 @@ Big respect to [MaLucheng](http://github.com/teddy-ma) for Chinese translation.
 ## 更新日志
 * 24.01.14. 加入了 [复杂的例子](https://github.com/operatino/markup-process) 使用 MCSS理论的视频录制的开发过程. MCSS现在有俄文,英文,日文和中文版.
 
-##MCSS 的特性
+## MCSS 的特性
 * 国际化
 * 文档分布在独立的模块中(俄文版已经是了)
 

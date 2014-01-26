@@ -1,20 +1,20 @@
 ---
-layout: default-en
+layout: default-cn
 title: CSS-o-Gram
 description: neat, intuitive, fast - like SSG, but peaceful
 
 context: inner-page cssg
 ---
 
-## First things first
+## 先说最重要的
 
-Any questions - feel free to ask project author via [email](mailto:wdybih@gmail.com).  
-All content is available for free distribution.  
-[Link to source](https://github.com/XOP/css-o-gram) is mandatory when copying materials. 
+任何问题 - 都可以通过 [email](mailto:wdybih@gmail.com) 询问项目作者.  
+所有内容都可以自由分发.  
+复制素材时[链接到源头](https://github.com/XOP/css-o-gram) 是强制的.
 
-**CSSG Generator tool** is on the way. Stay tuned!
+**CSSG Generator tool** 正在开发中. 敬请期待!
 
-### Quick nav
+### 快速导航
 
 * [Overview](#intro)
 * [Let's begin](#basics)
@@ -22,35 +22,36 @@ All content is available for free distribution.
 * [Syntax reference](#legend)
 
 <a id="intro"></a>
-## Overview
+## 概览
 
-CSSG stands for "CSS Diagram", in fact - a comment block in CSS file, which describes substance structure with CSS classes. Substance can be element, block or project.
+CSSG 代表 "CSS 图解", 事实上是一个 CSS 文件中的注释块, 描述了用 CSS 类标识的物质结构.物质可以是元素,块或者项目.
 
-This is your trusted companion in large project and assistant for your colleages, if you work in team. Low entry barriers - regular syntax and some logical rules are used.  
+它是你在大型项目中的小伙伴,领导班子建设中的助手,如果你在团队中工作的话. 学习门槛低 - 只有常规语法和一些逻辑规则被使用.  
 
-### For whom and for what
 
-* Better code structure and getting into new code
-* Conversation tool for colleages and developers, distant from front-end
-* Detecting potential "bottlenecks" in layout (excessive DOM nesting, classes amount etc.)
-* Easier debugging and refactoring
-* It's just pretty!
+### 为谁和为了什么
+
+* 更好的代码结构和加入新的代码
+* 领导班子和开发者的交流工具, 远离前端
+* 检测可能存在的布局"瓶颈"(过多的 DOM 嵌套, 类的数量等等)
+* 更容易的排错和重构
+* 这是美丽的!
 
 -----
 <a id="basics"></a>
-## Let's begin
-
-CSSG describes substance structure with familiar cascade of CSS classes.  
-Classes naming happens according to accepted rules that you or your company follow.  
+## 咱们开始吧
+ 
+CSSG 描述了用相似的层叠 CSS 类标识的物质结构.
+类的命名根据你或者你的公司的公认规则.
 Classes standing apart of substance classes are added near main class.  
 As a rule, auxillary (cosmetic) classes are not added, except for special cases (described in [Advanced section](#advanced)) 
 
 Along this documentation fictional substance "post" is used as an example.  
 Let's assume it's the post in blog or any other block that has head, body, footer and secondary elements.
 
-### Your first CSSG
+### 你的第一个 CSSG
 
-Let's say your HTML looks something like this:
+假设你的 HTML 看上去像这样:
 
         <div class="post">
             <div class="post_h">
@@ -64,7 +65,7 @@ Let's say your HTML looks something like this:
             </div>
         </div>
 
-CSS looks like that:
+CSS 是这样的:
 
     .post {
         font-size: 14px;
@@ -76,7 +77,7 @@ CSS looks like that:
     
     etc.
 
-CSSG illustrates HTML structure with CSS terminology and is placed in document _before_ all other rules:
+CSSG 把 HTML 结构用 CSS 的术语表达并且把说明文档放在所有其它规则的 _前面_ :
 
     /*
         
@@ -95,10 +96,10 @@ CSSG illustrates HTML structure with CSS terminology and is placed in document _
     .post {
         font-size: 14px;
     }
-
-If you've worked with HAML or have idea about it's syntax, this structure will be familiar to you.  
-By default all structure elements don't have specific DOM-presentantion, so _class_ is prior to _tag_.  
-If it's necessary to exaggerate tag-class connection, habitual zen-coding notation is used:
+ 
+如果你用过 HAML 或者认识它的语法, 这个结构对你来说就会很熟悉. 
+默认情况下所有的结构元素都没有特定的 DOM 呈现, 所以 _class_ 优先于 _tag_
+如果有必要夸大 tag-class 的链接, 可以使用 zen-coding 式的习惯:
 
     /*
         
@@ -109,17 +110,17 @@ If it's necessary to exaggerate tag-class connection, habitual zen-coding notati
         
     */
 
-Few notes on syntax:
+一些语法笔记:
 
 > descendants illustrated by tab  
 > siblings separated by extra line in case of having child elements  
 > CSSG structure should fit screen height due to viewing comfort
 
-### Key content
+### 关键内容
 
-Key content is denoted with ellipsis (...), other content is ignored.  
-Ellipsis means that there is no nesting or it is not related to described structure.  
-Example of incorrect CSSG:
+关键内容用省略号(...)表示, 其他内容被忽略. 
+省略号意味着这里没有嵌套或者没有相关的描述结构
+不正确的 CSSG 例子:
 
     /*
         
@@ -138,7 +139,7 @@ Example of incorrect CSSG:
         
     */
 
-Key content can be located near other important substance part:
+关键内容可以被放置在其它重要的物质部分旁边:
 
     /*
         
@@ -155,8 +156,11 @@ Key content can be located near other important substance part:
         
     */
 
-Apart substance, but still related to project, is denoted with figure brackets.  
+Apart substance, but still related to project, is denoted with figure brackets.除了物质,仍然相关于项目,意味着括号内的数字
+
 Key content, complemented with apart substance, is denoted with ellipsis placed nearby.
+关键内容, 相隔的物质的补码, 意味着附近的省略号.
+
 
     /*
     
@@ -169,9 +173,9 @@ Key content, complemented with apart substance, is denoted with ellipsis placed 
     
     */
 
-### Links
+### 链接
 
-In case of complicated structure, it is more convenient to describe structure skeleton with links to compound sections in the beginning of CSS document.
+如果发生了结构的复杂化, 用链接来混合各个部分在 CSS 文档的头部能更方便的描述结构构架.
 
     >> CSS start
     
@@ -193,17 +197,19 @@ In case of complicated structure, it is more convenient to describe structure sk
         
     */
 
-> link to compound section is denoted by native symbol - #
+> 链接各个部分用符号 - # 来表示
 
-### Modificators and project classes (mix-ins)
+### 修饰器和项目类(混合)
 
-HTML layout changes - due to context or by itself. CSS modificators allow to change substance presentation.  
-Modificator in fact is CSS class like **.post\_\_new** or **.\_\_compact**, which is placed near main class.  
-Project class (mix-in) allows to re-use substance and is placed separately from main class, e.g. **.post-featured**.
+HTML 布局改变了 - 由于上下文或者自身的原因. CSS 修饰器允许改变物质的外观.
+修饰器事实上是 CSS 类就像 **.post\_\_new** 或者 **.\_\_compact**, 被放在主类的旁边.
+项目类(混合)允许重用物质并且被放在和主类分开的地方, 比如 **.post-featured**.
 
-In CSSG all possible modificators placed on the right (aligned independently from nesting level) of target class.  
+在 CSSG 所有的可能的求事其都被放在目标类右边(和嵌套层独立对齐).
 You choose distance manually, regarding diagram size and reading comfort.  
+
 If project (mix-in) is implied, it is placed _before_ modificators list.
+
 
     /*
     
@@ -432,7 +438,7 @@ However all notation potential can be seen in context of describing more complex
 
 > the **% content %** element has no DOM implementation, it is just a template name
 
-### Dynamics
+### 动态
 
 By dynamics it's meant that some class or element may appear in layout due to scripts and user activity.
 
@@ -460,9 +466,9 @@ To define dynamic blocks complemented syntax for optional parts is used:
     
     */  
 
-### It's <<omplicated
+### 这是复杂的
 
-Complex CSS approach can be described with CSSG.
+复杂的 CSS 可以被 CSSG 描述.
 
 Alternative (mutual exclusive) blocks example:
 
@@ -495,7 +501,7 @@ When it's necessary to illustrate some valueable class somewhere high in DOM tre
      
     */
 
-CSSG is self-explanatory _as a rule_, but some tough situations may require comments:
+CSSG 是一个自解释的 _规则_, 但是有些情况下需要注释:
 
     /*
     
@@ -513,7 +519,7 @@ CSSG is self-explanatory _as a rule_, but some tough situations may require comm
 
 -----
 <a id="legend"></a>
-## Syntax reference
+## 语法参考
 
     element                                             element classname
     ...                                                 key content
