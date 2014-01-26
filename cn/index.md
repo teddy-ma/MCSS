@@ -294,7 +294,7 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 
 本站也是基于 MCSS 理论来设计的, 快看看 [源码]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 
-**[Here](https://github.com/operatino/markup-process) you can find more complex example of MCSS methodology usage with video recording of development process.**
+**[在这里](https://github.com/operatino/markup-process) 你可以找到更多的 MCSS 理论的复杂例子,有视频录制的开发过程.**
 
 <a id="dictionary"></a>
 ### 缩写字典
@@ -389,9 +389,9 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 ### 代码风格
 除了方法论, 我们建议使用下面的有用的实践来提升你代码的质量.
 
-* [Principles of writing consistent, idiomatic CSS](https://github.com/necolas/idiomatic-css)
-* [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - style guide for HTML and CSS code configuration
-* [CSScomb](http://csscomb.ru/) - tool for CSS-property sorting
+* [编写一致的,符合语音习惯的 CSS 的原则](https://github.com/necolas/idiomatic-css)
+* [谷歌的 HTML/CSS 风格指南](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - HTML 和 CSS 的代码结构的风格指南
+* [CSScomb](http://csscomb.ru/) - CSS 属性的排序工具
 
 ### 最佳实践
 * 尽可能多的注解CSS,在所有不标准的结构和神奇的数字 - 将会很有用,不仅对于你团队的成员, 也对你自己, 当你几个月后复查代码时.
